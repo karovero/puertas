@@ -1,0 +1,46 @@
+/* Estilo básico para la estructura */
+
+body {
+    background-color: #F5F5DC;
+    /* Beige claro */
+    color: #5A3E1B;
+    /* Marrón oscuro */
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #8B5A2B;
+    /* Marrón madera */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.producto {
+    background-color: #FFF8DC;
+    /* Color crema */
+    border: 1px solid #8B5A2B;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #5A3E1B;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8B5A2B;
+}
