@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Puertas</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#carrito">Carrito</a></li>
+            <li><a href="#calculadora">Calculadora</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h1>Bienvenidos a la Tienda de Puertas</h1>
+    </section>
+
+    <section id="catalogo">
+        <h2>Catálogo de Puertas</h2>
+        <div class="producto">
+            <img src="puerta" alt="Puerta Moderna">
+            <h3>Puerta Moderna</h3>
+            <p>Precio: $150</p>
+            <button onclick="agregarAlCarrito('Puerta Moderna', 150)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img src="puerta1" alt="Puerta Clásica">
+            <h3>Puerta Clásica</h3>
+            <p>Precio: $200</p>
+            <button onclick="agregarAlCarrito('Puerta Clásica', 200)">Agregar al Carrito</button>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <button onclick="finalizarCompra()">Enviar Pedido por WhatsApp</button>
+        <a href="tel:+1234567890">
+            <button>Llamar para Comprar</button>
+        </a>
+    </section>
+
+
+    <section id="calculadora">
+        <h2>Calculadora de Precios</h2>
+        <form id="calc-form">
+            <label for="puerta">Selecciona la puerta:</label>
+            <select id="puerta">
+                <option value="puerta1">Puerta 1</option>
+                <option value="puerta2">Puerta 2</option>
+            </select>
+            <label for="estado">Selecciona tu estado:</label>
+            <select id="estado">
+                <option value="estado1">Estado 1</option>
+                <option value="estado2">Estado 2</option>
+            </select>
+            <button type="button" onclick="calcularPrecio()">Calcular</button>
+        </form>
+        <p id="resultado"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
